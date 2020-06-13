@@ -64,7 +64,6 @@ body,html{
 }
 
 .logo-container{
-    margin-left: 2rem;
     height: 100%;
     width: 30%;
     display: flex;
@@ -241,6 +240,20 @@ body,html{
         height: 15%;
     }
 
+    .navlinks li a{
+        color:black;
+    }
+
+    .navlinks .active{
+        background-color: var(--orange);
+        color: white;
+    }
+
+    .navlinks a:hover{
+        background-color: var(--orange);
+        color: white;
+    }
+
     .title p{
         color:white;
     }
@@ -313,6 +326,11 @@ body,html{
         left: -100%;
         background-color: #FFF;
         transition: 1s;
+    }
+
+    .navlinks li a{
+        font-size: calc(2vw + .7rem);
+        color:black;
     }
 
     .navlinks .active{
