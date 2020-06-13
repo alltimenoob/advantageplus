@@ -9,13 +9,16 @@
     <script>
         function myFunction() {
         var x = document.getElementById("mynav");
+        var y =  document.getElementById("logo");
         
             if(x.style.left === '-100%')
             {
                 x.style.left = '0%';
+                y.style.color = 'black';
             }
             else
             {
+                y.style.color = 'white';
                 x.style.left = '-100%';
             } 
         }
@@ -34,8 +37,8 @@
             
             <div class="navbar">
                 <div class="logo-container">
-                    <div class="logo"></div>
-                    <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+                    <div class="logo" ></div>
+                    <a href="javascript:void(0);" id="logo" class="toggle" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
