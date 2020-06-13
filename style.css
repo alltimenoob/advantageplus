@@ -313,6 +313,7 @@ body,html{
     }
 
     .logo{
+        margin-left: 2rem;
         height: 70%;
     }
 
