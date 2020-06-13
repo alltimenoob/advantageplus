@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact - Advantage Plus</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("mynav");
+        var y =  document.getElementById("logo");
+        var z = document.getElementById("fasfa");
+      
+            if(x.style.left === '-100%')
+            {
+                x.style.left = '0%';
+                y.style.color = 'black';
+                z.className = "fa fa-close";
+            }
+            else
+            {
+                y.style.color = 'white';
+                x.style.left = '-100%';
+                z.className = "fa fa-bars";
+            } 
+        }
+
+      
+    </script>
+</head>
+<body  onscroll="myFunction1()">
+    <!--------------------------- PAGE-1  -------------------------------->
+        <div class="contactpage">
+            <!--------------------------- NAVIGATION -------------------------------->
+            
+            <div class="navbar">
+                <div class="logo-container">
+                    <div class="logo" ></div>
+                    <a href="javascript:void(0);" id="logo" class="toggle" onclick="myFunction()">
+                        <i id="fasfa" class="fa fa-bars"></i>
+                    </a>
+                </div>
+                
+                <div class="navlinks" id="mynav">
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#" class="active" >Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        <!-------------X------------ NAVIGATION ---------------X------------------->
+
+        <!-------------X------------ Content ---------------X------------------->
+        <div class="contact-content">
+            <div class="google-map">
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3148274628256!2d72.91673351449748!3d22.52987638520473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4debd0e29641%3A0x8b332a4f697df1e4!2sAdvantage%20Plus!5e0!3m2!1sen!2sin!4v1592039297422!5m2!1sen!2sin" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contact-info">
+                <table>
+                    <tr><td colspan="2" class="title"><p>Contact Us</p></td></tr>
+                    <tr><td colspan="2"><hr class="line"></td></tr>
+                    <tr> 
+                        <td class="column header"><p> Address:</p></td>
+                        <td class="column"><p> New Vallabh Vidyanagar, GIDC, Anand, Gujarat 388345</p></td>
+                    </tr>
+                    <tr> 
+                        <td class="column header"><p> Email:</p></td>
+                        <td class="column"><p> anc@gmail.com</p></td>
+                    </tr>
+                    <tr> 
+                        <td class="column header"><p> Contact:</p></td>
+                        <td class="column"><p> 1234567890</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </div>
+

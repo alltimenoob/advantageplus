@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Welcome - Advantage Plus</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
         function myFunction() {
         var x = document.getElementById("mynav");
         var y =  document.getElementById("logo");
-        
+        var z = document.getElementById("fasfa");
+      
             if(x.style.left === '-100%')
             {
                 x.style.left = '0%';
-                y.style.color = 'black';
+                z.className = "fa fa-close";
             }
             else
             {
-                y.style.color = 'white';
                 x.style.left = '-100%';
+                z.className = "fa fa-bars";
             } 
         }
 
-        function myFunction1() {
-        var x = document.getElementById("mynav");
-                x.style.left = "-100%";
-        }
+      
     </script>
 </head>
 <body  onscroll="myFunction1()">
@@ -39,16 +38,16 @@
                 <div class="logo-container">
                     <div class="logo" ></div>
                     <a href="javascript:void(0);" id="logo" class="toggle" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+                        <i id="fasfa" class="fa fa-bars"></i>
                     </a>
                 </div>
                 
                 <div class="navlinks" id="mynav">
                     <ul>
-                        <li><a href="#" class="active" >Home</a></li>
+                        <li><a href="index.html" class="active" >Home</a></li>
                         <li><a href="#">Technologies</a></li>
                         <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
