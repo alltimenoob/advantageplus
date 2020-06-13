@@ -239,6 +239,10 @@ body,html{
         height: 15%;
     }
 
+    .title p{
+        color:white;
+    }
+
     .title p, .aboutus-title{
         font-size: 2.5rem;
         text-align: center;
@@ -301,7 +305,6 @@ body,html{
     .navlinks
     {
         border-radius: 5px;
-        margin-top: 30%;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -341,6 +344,7 @@ body,html{
     }
     
     .navlinks li a{
+        font-size: calc(2vw + .5rem);
         color:black;
     }
 
