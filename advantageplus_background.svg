@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-advantageplus_background">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="advantageplus_background" clip-path="url(#clip-advantageplus_background)">
+    <rect width="1920" height="1080" fill="#fff"/>
+  </g>
+</svg>

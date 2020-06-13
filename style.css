@@ -1,0 +1,439 @@
+/*--------------FONT---------------*/
+
+@font-face{
+    font-family: Sans-Regular;
+    src: url("SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+    font-family: Sans-Bold;
+    src: url("SourceSansPro-SemiBold.ttf");
+}
+
+
+/*------X--------FONT---------X------*/
+
+
+/*-------------- DECLARATION -----------*/
+
+:root{
+    --blue : #211839;
+    --orange : #FF7C1C;
+}
+
+/*-------------- DECLARATION -----------*/
+
+body,html{
+   
+    height: 100%;
+    width: 100%;
+    font-family : Sans-Regular;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------------FIRST PAGE--------------------*/
+
+.defaultpage-container{
+    max-height: 1080px;
+    max-width: 1920px;
+    background: linear-gradient( var(--orange),#FF0000);
+    height:100%;
+    width: 100%;
+}
+
+
+.defaultpage{
+    height: 100%;
+    width: 100%;
+    background: url(back.svg) -700px -100px no-repeat;
+}
+
+
+
+/*---------------NAVIGATION BAR-- --------------*/
+.toggle
+{
+    color : white;
+    display : none;
+    font-size: 1.5rem;
+    z-index:2;
+    margin: 1.5rem;
+}
+
+.logo-container{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    width: 100%;
+    background : url(advantageplus_logo.png) no-repeat;
+    background-size: contain;
+}
+
+
+.navlinks ul{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    margin-right: 3rem;
+    padding: .2rem;
+   
+}
+
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem .9rem .5rem .9rem;
+}
+
+.navlinks .active{
+    color: var(--blue);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.navlinks a:hover{
+   color: var(--blue);
+   background-color: white;
+   border-radius: 20px;
+}
+
+
+/*----------X---------- NAVIGATION BAR ----------X----------*/
+
+
+
+/*------------------- FIRST PAGE CONTENT --------------------*/
+
+
+
+.content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin-left : 3rem;
+}
+
+.title p{
+    font-family: Sans-Bold;
+    color: var(--blue);
+    font-size:3rem;
+}
+
+.buttons {
+    margin-right : 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.engineering , .robotics{
+    
+    height: 40%;
+    width: 40% ;
+}
+
+.robotics:hover , .engineering:hover {
+    cursor: pointer;
+    transition: all ease 0.3s;
+    transform: scale(1.01);
+}
+
+/*------------X----------- FIRST PAGE ------------X------------*/
+
+.aboutpage{
+    max-height: 1080px;
+    max-width: 1920px;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.aboutuscontent{
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.aboutus-title{
+    text-align: center;
+    font-family: Sans-Bold;
+    color: var(--blue);
+    font-size:3rem;
+}
+
+.seprator{
+    border: 1px solid var(--orange);
+}
+
+.aboutus-desc{
+    font-size: 1.5rem;
+}
+
+.footer{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    background: url(advantageplus_footer.svg) no-repeat;
+}
+
+.footer-text{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:1368px)
+{ 
+    .defaultpage{
+        background: url(back.svg) -800px -300px no-repeat;
+    }
+}
+
+@media  (max-width:1280px)
+{ 
+    .defaultpage{
+        background: url(back.svg) -850px -300px no-repeat;
+    }
+}
+
+@media (max-width:1200px)
+{
+    .defaultpage{
+        background: none;
+    }
+
+    .navbar
+    {
+        height: 15%;
+    }
+
+    .title p, .aboutus-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .logo{
+        flex: 2;
+    }
+
+    .navlinks li{
+        margin-right: 1.5rem;
+    }
+
+    .logo{
+        width: 30%;
+        height: 100%;
+        background: url(advantageplus_dark_logo.png) no-repeat;
+        background-size: contain;
+    }
+
+    .footer-text , .aboutus-desc{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width:968px) 
+{
+    /*------------------FOR NAVIGATION !IMPORTANT (VERY VERY)------------*/
+    
+    .defaultpage-container,.aboutpage{
+        width: 100%;
+        height: 100%;
+        min-height: 800px;
+    }
+    
+    .navbar{
+        flex-direction: column;
+    }
+
+    .toggle{
+        margin: 10%;
+        display: block;
+        font-size: calc(5vw + .5rem);
+    }
+
+    .logo-container{
+        width: 100%
+    }
+
+    .defaultpage{
+        height:100%;
+        width: 100%;
+    }
+
+    .logo{
+        height: 70%;
+    }
+
+    .navlinks
+    {
+        border-radius: 5px;
+        margin-top: 30%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        background-color: #FFF;
+        transition: 1s;
+    }
+
+    .navlinks .active{
+        background-color: var(--orange);
+        color: white;
+    }
+
+    .navlinks a:hover{
+        background-color: var(--orange);
+        color: white;
+    }
+
+    .navlinks ul{
+        padding : 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navlinks li{
+        display: block;
+        margin : 10%;
+    }
+
+    .content{
+        height:90%;
+        width:100%;
+        justify-content: start;
+        flex-direction: column;
+    }
+    
+    .navlinks li a{
+        color:black;
+    }
+
+    .title{
+        padding: 0;
+        
+        flex:1;
+        margin: 0;
+    }
+
+    .title p , .aboutus-title{
+        font-size: calc(5vw + .8rem);
+        text-align: center;
+    }
+
+    .aboutus-desc , .footer-text{
+        font-size: calc(2vw + .5rem);
+    }
+
+    .buttons{
+        margin:0;
+        flex:4;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .robotics , .engineering{
+        max-width: 420px;
+        max-height: 420px;
+        width:100%;
+        height:30%;
+    }
+
+    .aboutuscontent{
+        width: 90%;
+    }
+
+    .navlinks li{
+        margin-top:3%;
+    }
+
+}
+
+
+@media (max-width:959px) and (max-height:479px){
+    body,html{
+        font-size:7px;
+    }
+
+    .defaultpage-container {
+        width: 100%;
+        height: 100%;
+    };
+
+    .robotics,.engineering{
+        width:70%;
+        height:50%;
+    }
+
+    .aboutuscontent{
+        width: 90%;
+    }
+
+    .navlinks li{
+        margin-top:3%;
+    }
+}
+
+
+
+@media screen and (min-width:1920px)
+{   
+    .defaultpage-container {
+        margin: auto;
+    }
+
+    .aboutpage{
+        margin: auto;
+    }
+
+    .defaultpage{
+        
+        background: url(back.svg) -500px -100px no-repeat;
+    }
+
+    .aboutuscontent{
+        width: 50%;
+    }
+
+    .buttons{
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Welcome - Advantage Plus</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("mynav");
+        
+            if(x.style.left === '-100%')
+            {
+                x.style.left = '0%';
+            }
+            else
+            {
+                x.style.left = '-100%';
+            } 
+        }
+
+        function myFunction1() {
+        var x = document.getElementById("mynav");
+                x.style.left = "-100%";
+        }
+    </script>
+</head>
+<body  onscroll="myFunction1()">
+    <!--------------------------- PAGE-1  -------------------------------->
+    <div class="defaultpage-container">
+        <div class="defaultpage">
+            <!--------------------------- NAVIGATION -------------------------------->
+            
+            <div class="navbar">
+                <div class="logo-container">
+                    <div class="logo"></div>
+                    <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                
+                <div class="navlinks" id="mynav">
+                    <ul>
+                        <li><a href="#" class="active" >Home</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        <!-------------X------------ NAVIGATION ---------------X------------------->
+
+
+        <!--------------------------- CONTENT -------------------------------->
+
+        <div class="content">
+            <div class="title">
+                <p>We Provide Services <br> That You Need</p>
+            </div>
+            <div class="buttons">
+                <img src="advantageplus_engineering.svg" alt="Engineering" class="engineering">
+                <img src="advantageplus_robotics.svg" alt="Robotics" class="robotics">
+            </div>
+
+        </div>
+
+        <!-------------X------------- CONTENT ---------------X---------------->
+        </div>
+    </div>
+
+    <!--------------X------------ PAGE 1 --------------X----------------->
+
+    <!-------------------------- PAGE 2 ------------------------------->
+
+    <div class="aboutpage">
+        
+        <div class="aboutuscontent">
+
+            <p class="aboutus-title">About Advantage Plus</p>
+            <hr class="seprator"/>
+            <p class="aboutus-desc">
+                Advantage Plus is a young and dynamic company, with a Portfolio that includes a wide range of ready for enameling components and industrial automation solutions.
+                <br><br>
+                Founders of Advantage plus has 25 plus years of experience in glass lining industry. Advantage Plus believes in assisting clients to achieve their needs using innovative solutions that are in line with customers’ aspirations.
+                <br><br>
+                Advantage Plus is an expert in glass lining supplementary products. With many basic products and variations Advantage Plus offers solutions from Special grade steel for Glass Lined Equipment’s, Robotic Welding services, forged and machined components and also but not limited to Enamel grade steel casting components covering practically every single step in the acquisition of raw materials for glass lining process.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p class="footer-text">© 2020 AdvantagePlus. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!------------X------------- PAGE 2 --------------X---------------->
+    
+</body>
+</html>
