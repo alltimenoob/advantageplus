@@ -14,4 +14,4 @@ Buisness Website for product showcase,services provided by company.
 
 ## Tools
 
-Personal Preference
+- Personal Preference
