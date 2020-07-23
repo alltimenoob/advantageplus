@@ -1,17 +1,17 @@
-#Advantage Plus
+# Advantage Plus
 
 Buisness Website for product showcase,services provided by company.
 
-#Contents
+## Contents
 
 - Static Website (Details of company)
 - Admin Panel (Web-App)
 
-#Technologies
+## Technologies
 
 - HTML,CSS
 - Node.js
 
-#Tools
+## Tools
 
 Personal Preference
