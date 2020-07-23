@@ -13,7 +13,7 @@
         var y =  document.getElementById("logo");
         var z = document.getElementById("fasfa");
       
-            if(x.style.left === '-100%')
+            if(x.style.left != '0%')
             {
                 x.style.left = '0%';
                 z.className = "fa fa-close";
@@ -37,7 +37,7 @@
             <div class="navbar">
                 <div class="logo-container">
                     <div class="logo" ></div>
-                    <a href="javascript:void(0);" id="logo" class="toggle" onclick="myFunction()">
+                    <a onclick="myFunction()" id="logo" class="toggle">
                         <i id="fasfa" class="fa fa-bars"></i>
                     </a>
                 </div>

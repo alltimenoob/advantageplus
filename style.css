@@ -109,13 +109,13 @@ body,html{
 .navlinks .active{
     color: var(--blue);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .navlinks a:hover{
    color: var(--blue);
    background-color: white;
-   border-radius: 20px;
+   border-radius: 50px;
 }
 
 
