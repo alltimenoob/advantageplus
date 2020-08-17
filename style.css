@@ -205,12 +205,13 @@ li:hover > a{
 .footer{
     max-height:324px;
     max-width: 1920px;
-    margin: auto;
     margin-top: 10rem;
+    margin: auto;
     height: 30%;
     width:100%;
     background: url(./advantageplus_footer.svg);
     background-size: cover;
+    background-position: 70%;
     display: flex;
     justify-content: center;
     align-items: flex-end;

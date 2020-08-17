@@ -6,10 +6,31 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>  
     <title>Advantage Plus - Home</title>
     <script>
+
+
+        function f_scroll(){
+            var navtoggle = document.getElementById("navtoggle");
+            var toggle = document.getElementById("toggle");
+
+            if(navtoggle.style.left == '0%')
+            {
+                navtoggle.style.left = '-100%';
+
+                if(toggle.classList.contains("close"))
+                {
+                    toggle.classList.remove("close");
+                }
+                else{
+                    toggle.classList.add("close");
+                }
+            }
+        }
+
+
         function f_animate(){
 
-            var toggle = document.getElementById("toggle");
             var navtoggle = document.getElementById("navtoggle");
+            var toggle = document.getElementById("toggle");
 
             if(toggle.classList.contains("close"))
             {
@@ -21,10 +42,11 @@
                 navtoggle.style.left = '0%';
             }
         }
+
     </script>
 </head>
-<body>
-    <div class="container">
+<body onscroll="f_scroll()">
+    <div class="container" id="scroll">
         <div class="navbar">
 
             <div class="logo">
@@ -61,6 +83,7 @@
         </div>
 
     </div>
+
     <div class="container2">
         <h1 class="intro-title">About Advantage Plus</h1>
         <hr class="seprator">
@@ -75,5 +98,6 @@
     <div class="footer">
         <p>© 2020 AdvantagePlus. All Rights Reserved.</p>
     </div>
+
 </body>
 </html>

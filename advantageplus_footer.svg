@@ -1,9 +1,9 @@
-<svg id="advantageplus_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1924.086" height="312.987" viewBox="0 0 1924.086 312.987">
+<svg id="advantageplus_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923.57" height="244.386" viewBox="0 0 1923.57 244.386">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#ff7c1c"/>
       <stop offset="1" stop-color="red"/>
     </linearGradient>
   </defs>
-  <path id="advantageplus_footer-2" data-name="advantageplus_footer" d="M2300.148,731.428s278.481,119.2,542.514,96.916c164.756-13.9,476.273-84.869,610.1-84.176,296.883,10.1,255.188,62.384,510.734,74.15s260.222-86.144,260.222-86.144v312.242l-1924.086-5.723Z" transform="translate(-2299.633 -731.428)" fill="url(#linear-gradient)"/>
+  <path id="advantageplus_footer-2" data-name="advantageplus_footer" d="M2300.148,731.428s278.481,92.882,542.514,75.521c164.756-10.833,476.273-66.134,610.1-65.593,296.883,7.867,255.188,48.612,510.734,57.781s260.222-67.127,260.222-67.127V975.32s-789.562,1.113-1270.583,0-652.987,0-652.987,0Z" transform="translate(-2300.148 -731.428)" fill="url(#linear-gradient)"/>
 </svg>
