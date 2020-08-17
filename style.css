@@ -207,7 +207,7 @@ li:hover > a{
     max-width: 1920px;
     margin-top: 10rem;
     margin: auto;
-    height: 30%;
+    height: 25%;
     width:100%;
     background: url(./advantageplus_footer.svg);
     background-size: cover;
@@ -217,7 +217,6 @@ li:hover > a{
 }
 
 .footer > p {
-    padding: 0;
     margin: 0;
     font-size: 1.2rem;
     color:white;
@@ -228,6 +227,10 @@ li:hover > a{
 {
     .container{
         background:linear-gradient(var(--orange),red);
+    }
+
+    .container2{
+        min-height: 60%;
     }
 
     .navbar{
@@ -288,10 +291,15 @@ li:hover > a{
 }
 
 @media  (max-width:968px){
-    
+
     .container{
         min-height: 800px;
     }
+
+    .container2{
+        min-height: 75%;
+    }
+    
     .menu{
         display: block;
     }
@@ -341,6 +349,10 @@ li:hover > a{
         margin-top: 1.5rem;
         font-size:1rem;
         max-width: 90%;
+    }
+
+    .footer{  
+        margin-top: 1.5rem;
     }
 
     .footer > p{
