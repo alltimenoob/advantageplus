@@ -1,0 +1,10 @@
+<svg id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff7c1c"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_11" data-name="Rectangle 11" width="1920" height="1080" fill="#fff"/>
+  <path id="Intersection_1" data-name="Intersection 1" d="M-1380.36,1211.45c-274.141-203.18-69.506-782.56,60.1-1079H-380.5v1079Z" transform="translate(2300 -131.955)" fill="url(#linear-gradient)"/>
+</svg>

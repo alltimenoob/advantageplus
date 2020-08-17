@@ -3,100 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Welcome - Advantage Plus</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./style.css"/>  
+    <title>Advantage Plus - Home</title>
     <script>
-        function myFunction() {
-        var x = document.getElementById("mynav");
-        var y =  document.getElementById("logo");
-        var z = document.getElementById("fasfa");
-      
-            if(x.style.left != '0%')
-            {
-                x.style.left = '0%';
-                z.className = "fa fa-close";
-            }
-            else
-            {
-                x.style.left = '-100%';
-                z.className = "fa fa-bars";
-            } 
-        }
+        function f_animate(){
 
-      
+            var toggle = document.getElementById("toggle");
+            var navtoggle = document.getElementById("navtoggle");
+
+            if(toggle.classList.contains("close"))
+            {
+                toggle.classList.remove("close");
+                navtoggle.style.left = '-100%';
+            }
+            else{
+                toggle.classList.add("close");
+                navtoggle.style.left = '0%';
+            }
+        }
     </script>
 </head>
-<body  onscroll="myFunction1()">
-    <!--------------------------- PAGE-1  -------------------------------->
-    <div class="defaultpage-container">
-        <div class="defaultpage">
-            <!--------------------------- NAVIGATION -------------------------------->
-            
-            <div class="navbar">
-                <div class="logo-container">
-                    <div class="logo" ></div>
-                    <a onclick="myFunction()" id="logo" class="toggle">
-                        <i id="fasfa" class="fa fa-bars"></i>
-                    </a>
-                </div>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="./logo.png" height="90%" alt="AdvantagePlus">
+
                 
-                <div class="navlinks" id="mynav">
-                    <ul>
-                        <li><a href="index.html" class="active" >Home</a></li>
-                        <li><a href="#">Technologies</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <div id="toggle" class="menu icon" onclick="f_animate()">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
                 </div>
+
             </div>
     
-        <!-------------X------------ NAVIGATION ---------------X------------------->
+            <ul id="navtoggle">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            
 
+        </div>
 
-        <!--------------------------- CONTENT -------------------------------->
-
-        <div class="content">
+        <div class="showcase">
             <div class="title">
-                <p>We Provide Services <br> That You Need</p>
+            <h1>We Provide Services That You Need</h1>
             </div>
-            <div class="buttons">
-                <img src="advantageplus_engineering.svg" alt="Engineering" class="engineering">
-                <img src="advantageplus_robotics.svg" alt="Robotics" class="robotics">
+            <div class="content">
+                <img src="./advantageplus_engineering.svg"  alt="">
+                <img src="./advantageplus_robotics.svg"  alt="">
             </div>
-
         </div>
 
-        <!-------------X------------- CONTENT ---------------X---------------->
-        </div>
     </div>
+    <div class="container2">
+        <h1 class="intro-title">About Advantage Plus</h1>
+        <hr class="seprator">
+        <p class="intro-content">Advantage Plus is a young and dynamic company, with a Portfolio that includes a wide range of ready for enameling components and industrial automation solutions.
+            <br><br>
+            Founders of Advantage plus has 25 plus years of experience in glass lining industry. Advantage Plus believes in assisting clients to achieve their needs using innovative solutions that are in line with customers’ aspirations.
+            <br><br>
+            Advantage Plus is an expert in glass lining supplementary products. With many basic products and variations Advantage Plus offers solutions from Special grade steel for Glass Lined Equipment’s, Robotic Welding services, forged and machined components and also but not limited to Enamel grade steel casting components covering practically every single step in the acquisition of raw materials for glass lining process.
+        </p>
 
-    <!--------------X------------ PAGE 1 --------------X----------------->
-
-    <!-------------------------- PAGE 2 ------------------------------->
-
-    <div class="aboutpage">
-        
-        <div class="aboutuscontent">
-
-            <p class="aboutus-title">About Advantage Plus</p>
-            <hr class="seprator"/>
-            <p class="aboutus-desc">
-                Advantage Plus is a young and dynamic company, with a Portfolio that includes a wide range of ready for enameling components and industrial automation solutions.
-                <br><br>
-                Founders of Advantage plus has 25 plus years of experience in glass lining industry. Advantage Plus believes in assisting clients to achieve their needs using innovative solutions that are in line with customers’ aspirations.
-                <br><br>
-                Advantage Plus is an expert in glass lining supplementary products. With many basic products and variations Advantage Plus offers solutions from Special grade steel for Glass Lined Equipment’s, Robotic Welding services, forged and machined components and also but not limited to Enamel grade steel casting components covering practically every single step in the acquisition of raw materials for glass lining process.
-            </p>
-        </div>
-        
-        <div class="footer">
-            <p class="footer-text">© 2020 AdvantagePlus. All Rights Reserved.</p>
-        </div>
     </div>
-
-    <!------------X------------- PAGE 2 --------------X---------------->
-    
+    <div class="footer">
+        <p>© 2020 AdvantagePlus. All Rights Reserved.</p>
+    </div>
 </body>
 </html>
