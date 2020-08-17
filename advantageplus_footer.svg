@@ -1,10 +1,9 @@
-
-<svg id="advantageplus_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923.57" height="244.386" viewBox="0 0 1923.57 244.386">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1925.003" height="252.5" viewBox="0 0 1925.003 252.5">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#ff7c1c"/>
       <stop offset="1" stop-color="red"/>
     </linearGradient>
   </defs>
-  <path id="advantageplus_footer-2" data-name="advantageplus_footer" d="M2300.148,731.428s278.481,92.882,542.514,75.521c164.756-10.833,476.273-66.134,610.1-65.593,296.883,7.867,255.188,48.612,510.734,57.781s260.222-67.127,260.222-67.127V975.32s-789.562,1.113-1270.583,0-652.987,0-652.987,0Z" transform="translate(-2300.148 -731.428)" fill="url(#linear-gradient)"/>
+  <path id="Union_1" data-name="Union 1" d="M.932,252.5V236.33c-.777-.02-1.639-.055,0-.089V157.5h.687L1.431,0S279.912,90.7,543.945,73.745c164.757-10.578,476.274-64.579,610.1-64.05,296.883,7.682,255.188,47.469,510.734,56.422S1925,.569,1925,.569V236.35h-.07V252.5Z" transform="translate(0.002)" fill="url(#linear-gradient)"/>
 </svg>
