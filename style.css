@@ -299,6 +299,7 @@ li:hover > a{
 
     .container2{
         min-height: 800px;
+        max-height: 800px;
     }
     
     .menu{
@@ -353,7 +354,7 @@ li:hover > a{
     }
 
     .footer{  
-        margin-top: 1.5rem;
+        margin: 1.5rem 0 0 0;
     }
 
     .footer > p{
