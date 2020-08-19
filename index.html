@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>  
     <title>Advantage Plus - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>  
     <script>
-
+        window.onload = function ()
+        {
+            document.getElementById('ddcontent').style.visibility="hidden";
+        }
 
         function f_scroll(){
             var navtoggle = document.getElementById("navtoggle");
@@ -26,7 +29,6 @@
             }
         }
 
-
         function f_animate(){
 
             var navtoggle = document.getElementById("navtoggle");
@@ -42,6 +44,49 @@
                 navtoggle.style.left = '0%';
             }
         }
+
+        function f_dropdownEnter(){
+            var ddc = document.getElementById("ddcontent");
+            var dd = document.getElementById("dd");
+            var ddtxt = document.getElementById("ddtxt");
+
+            if(ddc.style.visibility != "hidden"){
+
+                ddc.style.visibility = "hidden";
+                ddc.style.opacity = "0";
+
+                dd.style.backgroundColor = "";
+                dd.style.borderRadius = "";
+
+                ddtxt.style.color = "";
+
+                var css = '.dropdown:hover{border-radius: 10px; background-color: white ;}.dropdown:hover a{cursor: pointer;color:var(--blue);}';
+                var style = document.createElement('style');
+
+                if (style.styleSheet) {
+                    style.styleSheet.cssText = css;
+                } else {
+                    style.appendChild(document.createTextNode(css));
+                }
+
+                document.getElementsByTagName('head')[0].appendChild(style);
+
+            }
+            else{
+                ddc.style.visibility = "visible";
+                ddc.style.opacity = "1";
+                ddc.style.display = "flex";
+                ddc.style.flexDirection = "column";
+                ddc.style.justifyContent = "space-evenly";
+                ddc.style.alignItems = "flex-start";
+
+                dd.style.backgroundColor = "white";
+                dd.style.borderRadius = "10px";
+                ddtxt.style.color = "#1D0067";
+             }
+
+        }
+   
 
     </script>
 </head>
@@ -63,7 +108,13 @@
     
             <ul id="navtoggle">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Technologies</a></li>
+                <div class="dropdown" id="dd" onclick="f_dropdownEnter()" >
+                    <a id="ddtxt">Technologies</a>
+                    <div class="dropdowncontent" id="ddcontent" >
+                        <div class="dropdownitem"><a href="#">Engineering</a><img src="keyboard-right-arrow-button.svg" height="10px" width="10px"/></div>
+                        <div class="dropdownitem"><a href="#">Robotics</a><img src="keyboard-right-arrow-button.svg" height="10px" width="10px"/></div>
+                    </div>
+                </div>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
