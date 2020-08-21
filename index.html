@@ -5,97 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advantage Plus - Home</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>  
-    <script>
-        window.onload = function ()
-        {
-            document.getElementById('ddcontent').style.visibility="hidden";
-        }
-
-        function f_scroll(){
-            var navtoggle = document.getElementById("navtoggle");
-            var toggle = document.getElementById("toggle");
-
-            if(navtoggle.style.left == '0%')
-            {
-                navtoggle.style.left = '-100%';
-
-                if(toggle.classList.contains("close"))
-                {
-                    toggle.classList.remove("close");
-                }
-                else{
-                    toggle.classList.add("close");
-                }
-            }
-        }
-
-        function f_animate(){
-
-            var navtoggle = document.getElementById("navtoggle");
-            var toggle = document.getElementById("toggle");
-
-            if(toggle.classList.contains("close"))
-            {
-                toggle.classList.remove("close");
-                navtoggle.style.left = '-100%';
-            }
-            else{
-                toggle.classList.add("close");
-                navtoggle.style.left = '0%';
-            }
-        }
-
-        function f_dropdownEnter(){
-            var ddc = document.getElementById("ddcontent");
-            var dd = document.getElementById("dd");
-            var ddtxt = document.getElementById("ddtxt");
-
-            if(ddc.style.visibility != "hidden"){
-
-                ddc.style.visibility = "hidden";
-                ddc.style.opacity = "0";
-
-                dd.style.backgroundColor = "";
-                dd.style.borderRadius = "";
-
-                ddtxt.style.color = "";
-
-                var css = '.dropdown:hover{border-radius: 10px; background-color: white ;}.dropdown:hover a{cursor: pointer;color:var(--blue);}';
-                var style = document.createElement('style');
-
-                if (style.styleSheet) {
-                    style.styleSheet.cssText = css;
-                } else {
-                    style.appendChild(document.createTextNode(css));
-                }
-
-                document.getElementsByTagName('head')[0].appendChild(style);
-
-            }
-            else{
-                ddc.style.visibility = "visible";
-                ddc.style.opacity = "1";
-                ddc.style.display = "flex";
-                ddc.style.flexDirection = "column";
-                ddc.style.justifyContent = "space-evenly";
-                ddc.style.alignItems = "flex-start";
-
-                dd.style.backgroundColor = "white";
-                dd.style.borderRadius = "10px";
-                ddtxt.style.color = "#1D0067";
-             }
-
-        }
-   
-
-    </script>
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
 </head>
 <body onscroll="f_scroll()">
     <div class="container" id="scroll">
         <div class="navbar">
 
             <div class="logo">
-                <img src="logo.png" height="90%" alt="AdvantagePlus">
+                <img src="logo.png" height="100%" alt="AdvantagePlus">
 
                 
                 <div id="toggle" class="menu icon" onclick="f_animate()">
@@ -108,7 +26,7 @@
     
             <ul id="navtoggle">
                 <li class="active"><a href="#">Home</a></li>
-                <div class="dropdown" id="dd" onclick="f_dropdownEnter()" >
+                <div class="dropdown" id="dd" onclick="f_dropdownEnter(1)" >
                     <a id="ddtxt">Technologies</a>
                     <div class="dropdowncontent" id="ddcontent" >
                         <div class="dropdownitem"><a href="#">Engineering</a><img src="keyboard-right-arrow-button.svg" height="10px" width="10px"/></div>
@@ -116,7 +34,8 @@
                     </div>
                 </div>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Inquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             
