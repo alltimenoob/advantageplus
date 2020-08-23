@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advantage Plus - Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css"/> 
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
+</head>
+<body>
+    <body onscroll="f_scroll()">
+        <div class="container" id="scroll">
+            <div class="navbar">
+    
+                <div class="logo">
+                    <img src="logo.png" height="100%" alt="AdvantagePlus">
+    
+                    
+                    <div id="toggle" class="menu icon" onclick="f_animate()">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                    </div>
+                </div>
+        
+                <ul id="navtoggle">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown" id="dd" onclick="f_dropdownEnter(0)" >
+                        <a id="ddtxt">Technologies</a>
+                        <div class="dropdowncontent" id="ddcontent" >
+                            <div class="dropdownitem"><a href="#">Engineering</a><img src="keyboard-right-arrow-button.svg" height="10px" width="10px"/></div>
+                            <div class="dropdownitem"><a href="#">Robotics</a><img src="keyboard-right-arrow-button.svg" height="10px" width="10px"/></div>
+                        </div>
+                    </div>
+                    <li><a href="#">Gallery</a></li>
+                    <li class="active"><a href="inquiry.html">Inquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="feedback-container">
+                <div class="title"><h1>Inquiry</Inp></h1></div>
+                <div class="fcontent">
+                    <form action="">
+                        <input id="item7" type="text" name="company" required placeholder="Company Name">
+                        <input id="item1" type="text" name="firstname" required placeholder="First Name">
+                        <input id="item2" type="text" name="lastname" placeholder="Last Name">
+                        <input id="item3" type="text" name="email" required placeholder="Email">
+                        <input id="item4" type="text" name="subject" placeholder="Subject">
+                        <input id="item5" type="text" name="message" required placeholder="Message"> 
+                        <input id="item6" type="submit" name="submit" value="Submit" >
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2020 AdvantagePlus. All Rights Reserved.</p>
+            </div>
+    </div>
+
+   
+</body>
+</html>
