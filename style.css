@@ -26,6 +26,7 @@ html{
 }
 
 body{
+    min-height: 720px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -291,7 +292,7 @@ li:hover > a{
 }
 
 
-@media (max-aspect-ratio: 7/4),(max-width:1024px)
+@media (max-aspect-ratio: 7/4),(max-width:1080px)
 {
     .container{
         background:linear-gradient(var(--orange),red);
@@ -396,12 +397,12 @@ li:hover > a{
 
     .title{
         margin:0;
-    
+        font-size: 1rem;
     }
 
     .title h1{
+        font-size: 2em;
         width: 90%;
-        font-size: 1.7rem;
         color:white;
     }
 
